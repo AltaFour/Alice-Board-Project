@@ -19,3 +19,6 @@
 [submodule "AliceBoardPCB/TheKeebrary.pretty"]
 	path = AliceBoardPCB/TheKeebrary.pretty
 	url = https://github.com/n0bs/TheKeebrary.pretty
+[submodule "AliceBoardPCB/MX_Alps_Hybrid"]
+	path = AliceBoardPCB/MX_Alps_Hybrid
+	url = https://github.com/ai03-2725/MX_Alps_Hybrid
