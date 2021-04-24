@@ -7,3 +7,12 @@
 [submodule "AliceBoardPCB/kicad_lib_tmk"]
 	path = AliceBoardPCB/kicad_lib_tmk
 	url = https://github.com/tmk/kicad_lib_tmk
+[submodule "AliceBoardPCB/macropad_keyboard_design"]
+	path = AliceBoardPCB/macropad_keyboard_design
+	url = https://github.com/AltaFour/macropad_keyboard_design
+[submodule "AliceBoardPCB/Keyboard.pretty"]
+	path = AliceBoardPCB/Keyboard.pretty
+	url = https://github.com/stormbard/Keyboard.pretty
+[submodule "AliceBoardPCB/keebs.pretty"]
+	path = AliceBoardPCB/keebs.pretty
+	url = https://github.com/egladman/keebs.pretty
