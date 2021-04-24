@@ -16,3 +16,6 @@
 [submodule "AliceBoardPCB/keebs.pretty"]
 	path = AliceBoardPCB/keebs.pretty
 	url = https://github.com/egladman/keebs.pretty
+[submodule "AliceBoardPCB/TheKeebrary.pretty"]
+	path = AliceBoardPCB/TheKeebrary.pretty
+	url = https://github.com/n0bs/TheKeebrary.pretty
