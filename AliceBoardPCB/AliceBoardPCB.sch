@@ -2059,17 +2059,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 1100 3550 950 
 Connection ~ 3550 1100
-$Comp
-L keyboard_parts:GND #PWR0102
-U 1 1 60ECF4DB
-P 3250 4750
-F 0 "#PWR0102" H 3250 4800 20  0001 C CNN
-F 1 "GND" H 3250 4809 30  0000 C CNN
-F 2 "" H 3250 4750 60  0000 C CNN
-F 3 "" H 3250 4750 60  0000 C CNN
-	1    3250 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 4700 3550 4700
 Wire Wire Line
@@ -2086,17 +2075,6 @@ F 1 "1uF" H 2442 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 2800 50  0001 C CNN
 F 3 "~" H 2350 2800 50  0001 C CNN
 	1    2350 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 608E0B42
-P 2350 3000
-F 0 "#PWR0103" H 2350 2750 50  0001 C CNN
-F 1 "GND" H 2355 2827 50  0000 C CNN
-F 2 "" H 2350 3000 50  0001 C CNN
-F 3 "" H 2350 3000 50  0001 C CNN
-	1    2350 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2221,17 +2199,6 @@ F 3 "~" H 4600 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 3500 4500 3500
-$Comp
-L power:GND #PWR0105
-U 1 1 608F736F
-P 5000 3500
-F 0 "#PWR0105" H 5000 3250 50  0001 C CNN
-F 1 "GND" H 5005 3327 50  0000 C CNN
-F 2 "" H 5000 3500 50  0001 C CNN
-F 3 "" H 5000 3500 50  0001 C CNN
-	1    5000 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 3500 5000 3500
 $Comp
@@ -2343,14 +2310,6 @@ Wire Notes Line
 	5300 6350 7300 6350
 Wire Notes Line
 	7300 6350 7300 5150
-Wire Notes Line
-	7300 5150 5300 5150
-Wire Notes Line
-	5300 5150 5300 6350
-Wire Notes Line
-	10450 5000 10450 800 
-Wire Notes Line
-	5300 800  5300 5000
 Text Notes 5350 1000 0    50   ~ 0
 Switch Matrix
 $Comp
@@ -2395,30 +2354,8 @@ F 3 "" H 2950 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 950  2950 1100
-$Comp
-L power:GND #PWR0109
-U 1 1 60A84FC8
-P 1850 1400
-F 0 "#PWR0109" H 1850 1150 50  0001 C CNN
-F 1 "GND" H 1855 1227 50  0000 C CNN
-F 2 "" H 1850 1400 50  0001 C CNN
-F 3 "" H 1850 1400 50  0001 C CNN
-	1    1850 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 1400 1850 1400
-$Comp
-L Type-C:HRO-TYPE-C-31-M-12 USB1
-U 1 1 60ABC486
-P 3000 6250
-F 0 "USB1" H 2833 7047 60  0000 C CNN
-F 1 "HRO-TYPE-C-31-M-12" H 2833 6941 60  0000 C CNN
-F 2 "Type-C:HRO-TYPE-C-31-M-12" H 3000 6250 60  0001 C CNN
-F 3 "" H 3000 6250 60  0001 C CNN
-	1    3000 6250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 60ABDFC4
@@ -2615,11 +2552,7 @@ $EndComp
 Wire Wire Line
 	4950 6450 5000 6450
 Wire Notes Line
-	2250 5150 5150 5150
-Wire Notes Line
 	5150 7250 2250 7250
-Wire Notes Line
-	5150 5150 5150 7250
 Wire Notes Line
 	2250 5150 2250 7250
 Text Notes 3950 5300 2    50   ~ 0
@@ -2629,13 +2562,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 2900 2350 3000
 Wire Notes Line
-	5150 5000 5150 650 
-Wire Notes Line
 	5150 650  1700 650 
 Wire Notes Line
 	1700 650  1700 5000
-Wire Notes Line
-	1700 5000 5150 5000
 Text Notes 3100 4150 2    118  ~ 0
 Microcontroller
 $Comp
@@ -2653,10 +2582,6 @@ Wire Wire Line
 	3050 2200 2900 2200
 NoConn ~ 3050 2000
 NoConn ~ 3100 5900
-Wire Notes Line
-	5300 800  10450 800 
-Wire Notes Line
-	5300 5000 10450 5000
 Connection ~ 6750 4850
 Wire Wire Line
 	6750 4850 7350 4850
@@ -2683,4 +2608,110 @@ Wire Wire Line
 	4000 6000 5100 6000
 Wire Wire Line
 	4950 6550 5100 6550
+Wire Notes Line
+	5300 800  10200 800 
+Wire Notes Line
+	10200 800  10200 5000
+Wire Notes Line
+	5150 650  5150 7250
+Wire Notes Line
+	1700 5000 10200 5000
+Wire Notes Line
+	2250 5150 7300 5150
+Wire Notes Line
+	5300 800  5300 6350
+$Comp
+L power:GND #PWR0102
+U 1 1 60A1A95D
+P 3250 4750
+F 0 "#PWR0102" H 3250 4500 50  0001 C CNN
+F 1 "GND" H 3255 4577 50  0000 C CNN
+F 2 "" H 3250 4750 50  0001 C CNN
+F 3 "" H 3250 4750 50  0001 C CNN
+	1    3250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60A63483
+P 2350 3000
+F 0 "#PWR0103" H 2350 2750 50  0001 C CNN
+F 1 "GND" H 2355 2827 50  0000 C CNN
+F 2 "" H 2350 3000 50  0001 C CNN
+F 3 "" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 60A87FB0
+P 1850 1400
+F 0 "#PWR0105" H 1850 1150 50  0001 C CNN
+F 1 "GND" H 1855 1227 50  0000 C CNN
+F 2 "" H 1850 1400 50  0001 C CNN
+F 3 "" H 1850 1400 50  0001 C CNN
+	1    1850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 60AACA9E
+P 5000 3500
+F 0 "#PWR0109" H 5000 3250 50  0001 C CNN
+F 1 "GND" H 5005 3327 50  0000 C CNN
+F 2 "" H 5000 3500 50  0001 C CNN
+F 3 "" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 USB1
+U 1 1 60ABC486
+P 3000 6250
+F 0 "USB1" H 2833 7047 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 2833 6941 60  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12" H 3000 6250 60  0001 C CNN
+F 3 "" H 3000 6250 60  0001 C CNN
+	1    3000 6250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 2800 2    50   Input ~ 0
+ROW2
+Text GLabel 4250 2700 2    50   Input ~ 0
+ROW3
+Text GLabel 4250 2600 2    50   Input ~ 0
+ROW4
+Text GLabel 4250 2900 2    50   Input ~ 0
+ROW1
+Text GLabel 4250 3100 2    50   Input ~ 0
+ROW0
+Text GLabel 4250 2100 2    50   Input ~ 0
+COL6
+Text GLabel 4250 1700 2    50   Input ~ 0
+COL7
+Text GLabel 4250 1600 2    50   Input ~ 0
+COL8
+Text GLabel 4250 1500 2    50   Input ~ 0
+COL9
+Text GLabel 4250 1400 2    50   Input ~ 0
+COL10
+Text GLabel 4250 4000 2    50   Input ~ 0
+COL13
+Text GLabel 4250 3900 2    50   Input ~ 0
+COL12
+Text GLabel 4250 3800 2    50   Input ~ 0
+COL11
+Text GLabel 4250 2000 2    50   Input ~ 0
+COL0
+Text GLabel 4250 1900 2    50   Input ~ 0
+COL1
+Text GLabel 4250 1800 2    50   Input ~ 0
+COL5
+Text GLabel 4250 3300 2    50   Input ~ 0
+COL4
+Text GLabel 4250 3200 2    50   Input ~ 0
+COL2
+Text GLabel 4250 3000 2    50   Input ~ 0
+COL3
+NoConn ~ 3100 6500
 $EndSCHEMATC
